@@ -12,24 +12,24 @@ typedef struct StackNode {
 // указатель на верхушку стека
 typedef struct {
     StackNode* top;
-} stack;
+} Stack;
 
 // Создать новый пустой стек
-stack* newStack();
+Stack* newStack();
 
 // Удалить весь стек
-void deleteStack(stack *s);
+void deleteStack(Stack *s);
 
 // Положить элемент на стек
-void push(stack *s, int value);
+void push(Stack *s, int value);
 
 // Взять элемент со стека
-int pop(stack *s, bool *success);
+int pop(Stack *s, bool *success);
 
 // Посмотреть верхний элемент стека
-int peek(stack *s, bool *success);
+int peek(Stack *s, bool *success);
 
 // Проверка пустоты стека
-bool isEmpty(stack *s);
+bool isEmpty(Stack *s);
 
 #endif
